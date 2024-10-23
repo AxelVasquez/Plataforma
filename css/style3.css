@@ -55,20 +55,25 @@
 
 .nav-responsive {
     display: none;
-    background: rgba(255, 131, 22, 1); /* Fondo con un color vibrante */
-    color: white; /* Texto en blanco para un buen contraste */
-    padding: 10px 20px; /* Más espacio alrededor del texto */
-    border-radius: 25px; /* Bordes más redondeados para un look más moderno */
+    background: rgba(255, 131, 22, 1); 
+    color: white; 
+    padding: 10px 20px; 
+    border-radius: 25px; 
     cursor: pointer;
-    font-family: 'Arial', sans-serif; /* Fuente elegante */
-    font-size: 1rem; /* Tamaño de fuente ajustado */
-    font-weight: bold; /* Texto en negrita */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil para darle profundidad */
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+    font-family: 'Arial', sans-serif; 
+    font-size: 1rem; 
+    font-weight: bold; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
 }
 
 .nav-responsive:hover {
-    background-color: rgba(255, 104, 0, 1); /* Cambia el color de fondo al pasar el ratón */
+    background-color: rgba(255, 104, 0, 1); 
+    transform: scale(1.05);
+}
+
+.nav-responsive:hover {
+    background-color: rgba(255, 104, 0, 1); 
     transform: scale(1.05);
 }
 /* Sección del título */
@@ -76,7 +81,7 @@
     font-family: "Prata";
     display: flex;
     justify-content: space-between;
-    align-items: flex-start; /* Alinea los elementos al tope */
+    align-items: flex-start; 
     background-color: rgba(236, 140, 44, 1);
     color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -105,7 +110,7 @@
 /* Contenedor de la imagen */
 .font {
     max-width: 40%;
-    align-self: flex-start; /* Alinea la imagen al tope */
+    align-self: flex-start; 
 }
 
 .font img {
@@ -127,11 +132,11 @@
 /* Contenedor de tarjetas */
 .card-container {
     display: flex;
-    justify-content: space-around; /* Espacia las tarjetas uniformemente */
-    gap: 20px; /* Espacio entre las tarjetas */
-    flex-wrap: wrap; /* Permite que las tarjetas se ajusten en múltiples filas si es necesario */
+    justify-content: space-around; 
+    gap: 20px; 
+    flex-wrap: wrap; 
     padding: 29px;
-    background: rgba(217, 247, 233, 1); /* Color de fondo del contenedor */
+    background: rgba(217, 247, 233, 1); 
 }
 /* Estilo de la tarjeta */
 /* Efecto de zoom para .card */
@@ -145,12 +150,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    transition: transform 0.3s ease-in-out; /* Suaviza el movimiento */
+    transition: transform 0.3s ease-in-out; 
 }
 
 /* Zoom al pasar el mouse */
 .card:hover {
-    transform: scale(1.05); /* Efecto de zoom pequeño */
+    transform: scale(1.05); 
 }
 .card-header {
     background: rgba(255, 138, 41, 1);
@@ -167,8 +172,8 @@
     height: 12rem;
     border-radius: 50%;
     position: absolute;
-    bottom: -4rem; /* Baja la imagen a la mitad del borde */
-    left: calc(40% - 50px);  /*Centra la imagen horizontalmente */
+    bottom: -4rem; 
+    left: calc(40% - 50px);  
 }
 .card-header2 img {
     
@@ -176,18 +181,18 @@
     height: 12rem;
     border-radius: 50%;
     position: absolute;
-    bottom: -4rem; /* Baja la imagen a la mitad del borde */
-    left: calc(40% - 50px);  /*Centra la imagen horizontalmente */
+    bottom: -4rem; 
+    left: calc(40% - 50px);  
 }
 /* Cuerpo de la tarjeta */
 .card-body {
     padding: 20px;
     background-color: white;
-    padding-top: 30px; /* Ajusta el espacio superior para la imagen */
+    padding-top: 30px; 
 }
 .card-body h2 {
-    margin-top: 46px; /* Ajusta según sea necesario */
-    margin-bottom: 10px; /* Ajusta si necesitas más espacio debajo */
+    margin-top: 46px; 
+    margin-bottom: 10px; 
     font-family: "Montserrat", sans-serif;
     font-size: 1.8rem;
     font-weight: 600;
@@ -213,48 +218,65 @@ li {
 }
 .enlace-video {
     text-decoration: none;
-    color: inherit; /* Opcional: mantiene el color del texto del elemento padre */
+    color: inherit; 
 }
 #background-pink {
     background: rgba(255, 232, 173, 1);
-    margin: 0; /* Elimina márgenes */
+    margin: 0; 
 }
 /* Estilos para el pie de página */
 .footer {
-    background-color: rgba(236, 140, 44, 1); /* Color de fondo */
-    color: white; /* Color del texto */
-    padding: 20px; /* Espacio alrededor del contenido */
-    display: flex; /* Aplica flexbox */
-    justify-content: space-between; /* Separa los elementos a la izquierda y derecha */
-    align-items: center; /* Alinea verticalmente los elementos al centro */
+    background-color: rgba(236, 140, 44, 1); 
+    color: white; 
+    padding: 20px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    text-align: center;
+    position: relative;
+    width: 100%;
 }
 
 /* Estilos para los iconos de redes sociales */
 .footer .social-icons {
     display: flex;
-    gap: 10px; /* Espacio entre los iconos */
+    gap: 10px; 
 }
 
 .footer .social-icons a {
     color: white;
     text-decoration: none;
-    font-size: 24px; /* Tamaño de los iconos */
-    transition: color 0.3s; /* Transición suave para el cambio de color */
+    font-size: 24px; 
+    transition: color 0.3s; 
 }
 
 .footer .social-icons a:hover {
-    color: rgba(255, 186, 5, 1); /* Cambia el color al pasar el ratón por encima */
+    color: rgba(255, 186, 5, 1); 
 }
 
 /* Estilos para el contenedor developer */
 .footer .developer {
-    text-align: right; /* Alinea el texto a la derecha */
+    text-align: right; 
 }
 
 .footer .developer p {
     font-family: "Montserrat";
-    margin: 0; /* Elimina el margen */
-    font-size: 14px; /* Tamaño del texto */
+    margin: 0; 
+    font-size: 14px; 
+}
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(236, 140, 44, 1); 
+    color: #000000;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
 }
 /* SECCION RESPONSIVE */
 @media screen and (max-width:980px){
@@ -294,7 +316,7 @@ li {
         position: absolute;
         right: 0;
         top: 75px;
-        background-color: #aac3c7;
+        background-color: #fff;
         width: 180px;
     }
     nav.responsive ul{
@@ -309,8 +331,8 @@ li {
 /* Media queries para responsive */
 @media (max-width: 768px) {
     .card-container {
-        flex-direction: column; /* Apila las tarjetas verticalmente en móviles */
-        align-items: center; /* Centra las tarjetas verticalmente */
+        flex-direction: column; 
+        align-items: center; 
     }
     .card {
         width: 80%; 
@@ -324,8 +346,8 @@ li {
     }
 
     .card {
-        width: 100%; /* Ancho ajustado para móviles */
-        height: auto; /* Altura ajustada para móviles */
+        width: 100%; 
+        height: auto; 
     }
 
     .titulo {

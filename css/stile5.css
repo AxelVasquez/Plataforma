@@ -54,11 +54,21 @@
 
 .nav-responsive {
     display: none;
-    background: rgba(98, 120, 247, 1);
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
+    background: rgba(98, 120, 247, 1); 
+    color: white; 
+    padding: 10px 20px; 
+    border-radius: 25px; 
     cursor: pointer;
+    font-family: 'Arial', sans-serif; 
+    font-size: 1rem; 
+    font-weight: bold; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.nav-responsive:hover {
+    background-color: rgba(98, 110, 247, 1); 
+    transform: scale(1.05);
 }
 /* Estilos para el contenedor principal */
 main {
@@ -77,7 +87,7 @@ main {
 
 /* Estilos para las secciones */
 .container, .container-2 {
-    width: 48%; /* Ajusta el ancho para que ambos contenedores se alineen uno al lado del otro */
+    width: 48%; 
     padding: 1rem;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -85,14 +95,14 @@ main {
 
 /* Colores de fondo */
 .container {
-    background-color: #ffcccb; /* Color para el primer contenedor */
+    background-color: #ffcccb; 
 }
 
 .container-2 {
-    background-color: #add8e6; /* Color para el segundo contenedor */
+    background-color: #add8e6; 
 }
 
-/* Estilos para el contenido */
+
 .content {
     display: flex;
     align-items: center;
@@ -104,12 +114,27 @@ main {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background-color: #ccc; /* Color de fondo temporal para la imagen */
-    margin-right: 1rem; /* Espacio entre la imagen y el texto */
+    margin-right: 1rem; 
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.profile-img {
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%; 
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+}
+
 
 /* Información alineada a la derecha */
 .info {
@@ -140,39 +165,56 @@ main {
 
 /* Estilos para el pie de página */
 .footer {
-    background-color: rgba(98, 120, 247, 1); /* Color de fondo */
-    color: white; /* Color del texto */
-    padding: 20px; /* Espacio alrededor del contenido */
-    display: flex; /* Aplica flexbox */
-    justify-content: space-between; /* Separa los elementos a la izquierda y derecha */
-    align-items: center; /* Alinea verticalmente los elementos al centro */
+    background-color: rgba(98, 120, 247, 1); 
+    color: white; 
+    padding: 20px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    text-align: center;
+    position: relative;
+    width: 100%;
 }
 
 /* Estilos para los iconos de redes sociales */
 .footer .social-icons {
     display: flex;
-    gap: 10px; /* Espacio entre los iconos */
+    gap: 10px; 
 }
 
 .footer .social-icons a {
     color: white;
     text-decoration: none;
-    font-size: 24px; /* Tamaño de los iconos */
-    transition: color 0.3s; /* Transición suave para el cambio de color */
+    font-size: 24px; 
+    transition: color 0.3s; 
 }
 
 .footer .social-icons a:hover {
-    color: #1da1f2; /* Cambia el color al pasar el ratón por encima */
+    color: #1da1f2; 
 }
 
 /* Estilos para el contenedor developer */
 .footer .developer {
-    text-align: right; /* Alinea el texto a la derecha */
+    text-align: right; 
 }
 
 .footer .developer p {
-    margin: 0; /* Elimina el margen */
-    font-size: 14px; /* Tamaño del texto */
+    margin: 0; 
+    font-size: 14px; 
+}
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(98, 120, 247, 1); 
+    color: #000000;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
 }
 @media screen and (max-width:980px){
     nav{
@@ -186,7 +228,7 @@ main {
         position: absolute;
         right: 0;
         top: 75px;
-        background-color: #aac3c7;
+        background-color: #fff;
         width: 180px;
     }
     nav.responsive ul{
@@ -211,7 +253,7 @@ main {
         position: absolute;
         right: 0;
         top: 75px;
-        background-color: #aac3c7;
+        background-color: #fff;
         width: 180px;
     }
     nav.responsive ul{
@@ -232,8 +274,8 @@ main {
     }
 
     .container, .container-2 {
-        width: 100%; /* Ajuste para dispositivos móviles */
-        margin-bottom: 1rem; /* Espacio entre contenedores */
+        width: 100%; 
+        margin-bottom: 1rem; 
     }
 
     .content {
@@ -243,10 +285,10 @@ main {
 
     .profile-img {
         margin-right: 0;
-        margin-bottom: 1rem; /* Espacio entre la imagen y el texto en móvil */
+        margin-bottom: 1rem; 
     }
 
     .info {
-        text-align: center; /* Centra el texto en dispositivos móviles */
+        text-align: center; 
     }
 }

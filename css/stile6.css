@@ -55,18 +55,28 @@
 
 .nav-responsive {
     display: none;
-    background: rgba(135, 22, 255, 1);
+    background: rgba(135, 22, 255, 1); 
     color: white;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 10px 20px; 
+    border-radius: 25px; 
     cursor: pointer;
+    font-family: 'Arial', sans-serif; 
+    font-size: 1rem; 
+    font-weight: bold; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.nav-responsive:hover {
+    background-color: rgba(135, 0, 240, 1); 
+    transform: scale(1.05);
 }
 /* Sección del título */
 .titulo {
     text-align: center;
     padding: 2rem;
-    background-color: #f4f4f4; /* Fondo claro para destacar el texto */
-    border-bottom: 1px solid #ccc; /* Línea sutil debajo de la sección */
+    background-color: #f4f4f4; 
+    border-bottom: 1px solid #ccc; 
 }
 
 .titulo h1 {
@@ -75,7 +85,7 @@
     font-weight: bold;
     color: #333;
     margin-bottom: 1rem;
-    text-transform: uppercase; /* Texto en mayúsculas para mayor impacto */
+    text-transform: uppercase; 
 }
 
 .titulo p {
@@ -84,13 +94,13 @@
     color: #555;
     margin: 0;
     line-height: 1.5;
-    font-style: italic; /* Añade un toque de cursiva para un look más académico */
+    font-style: italic; 
 }
 /* Estilos del contenedor principal */
 .container {
     padding: 2rem;
     font-family: 'Times New Roman', serif;
-    background-color: #f7f7f7; /* Fondo claro para todo el contenedor */
+    background-color: #f7f7f7; 
     line-height: 1.6;
 }
 
@@ -111,7 +121,7 @@
     color: #333;
     text-align: center;
     margin-bottom: 1rem;
-    border-bottom: 2px solid #ccc; /* Línea decorativa debajo del título */
+    border-bottom: 2px solid #ccc; 
     padding-bottom: 0.5rem;
 }
 
@@ -119,7 +129,7 @@
 .article p {
     font-size: 1.2rem;
     color: #555;
-    text-align: justify; /* Justifica el texto para un look más formal */
+    text-align: justify; 
     margin-bottom: 1rem;
 }
 
@@ -143,38 +153,55 @@
 /* Estilos para el pie de página */
 .footer {
     background-color: rgba(135, 22, 255, 1);
-    color: white; /* Color del texto */
-    padding: 20px; /* Espacio alrededor del contenido */
-    display: flex; /* Aplica flexbox */
-    justify-content: space-between; /* Separa los elementos a la izquierda y derecha */
-    align-items: center; /* Alinea verticalmente los elementos al centro */
+    color: white; 
+    padding: 20px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    text-align: center;
+    position: relative;
+    width: 100%;
 }
 
 /* Estilos para los iconos de redes sociales */
 .footer .social-icons {
     display: flex;
-    gap: 10px; /* Espacio entre los iconos */
+    gap: 10px; 
 }
 
 .footer .social-icons a {
     color: white;
     text-decoration: none;
-    font-size: 24px; /* Tamaño de los iconos */
-    transition: color 0.3s; /* Transición suave para el cambio de color */
+    font-size: 24px; 
+    transition: color 0.3s; 
 }
 
 .footer .social-icons a:hover {
-    color: #6133e1; /* Cambia el color al pasar el ratón por encima */
+    color: #6133e1; 
 }
 
 /* Estilos para el contenedor developer */
 .footer .developer {
-    text-align: right; /* Alinea el texto a la derecha */
+    text-align: right; 
 }
 
 .footer .developer p {
-    margin: 0; /* Elimina el margen */
-    font-size: 14px; /* Tamaño del texto */
+    margin: 0; 
+    font-size: 14px; 
+}
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(135, 22, 255, 1);
+    color: #000000;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
 }
 /* SECCION RESPONSIVE */
 @media screen and (max-width:980px){
@@ -201,6 +228,7 @@
     }
 }
 
+
 /* SECCION RESPONSIVE */
 @media screen and (max-width:980px){
     nav{
@@ -214,7 +242,7 @@
         position: absolute;
         right: 0;
         top: 75px;
-        background-color: #aac3c7;
+        background-color: #fff;
         width: 180px;
     }
     nav.responsive ul{
@@ -235,11 +263,11 @@
     }
 
     .titulo h1 {
-        font-size: 2rem; /* Ajusta el tamaño de la fuente para pantallas pequeñas */
+        font-size: 2rem; 
     }
 
     .titulo p {
-        font-size: 1.2rem; /* Ajusta el tamaño de la fuente para pantallas pequeñas */
+        font-size: 1.2rem; 
     }
 
     /* Estilos del contenedor principal */
@@ -250,27 +278,27 @@
     /* Estilos del artículo */
     .article {
         padding: 1rem;
-        max-width: 100%; /* Asegura que el artículo ocupe todo el ancho disponible en móviles */
+        max-width: 100%; 
     }
 
     /* Estilos de los encabezados */
     .article h2 {
-        font-size: 1.5rem; /* Ajusta el tamaño de la fuente para pantallas pequeñas */
+        font-size: 1.5rem; 
         padding-bottom: 0.25rem;
     }
 
     /* Estilos de los párrafos */
     .article p {
-        font-size: 1rem; /* Ajusta el tamaño de la fuente para pantallas pequeñas */
+        font-size: 1rem;
         margin-bottom: 0.5rem;
     }
 
     /* Estilos de las listas */
     .article ul {
-        margin-left: 1rem; /* Ajusta el margen para pantallas pequeñas */
+        margin-left: 1rem; 
     }
 
     .article ul li {
-        margin-bottom: 0.25rem; /* Reduce el espacio entre elementos de la lista */
+        margin-bottom: 0.25rem; 
     }
 }
